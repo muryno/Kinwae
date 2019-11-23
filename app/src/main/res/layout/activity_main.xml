@@ -4,7 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+<View
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:background="#FFA500"/>
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/icn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_left"
+        />
+        <TextView
+            android:layout_toEndOf="@id/icn"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="30dp"
+            android:textColor="@color/colorAccent"
+            android:text="back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+
+            android:layout_height="30dp"
+            android:text="Personal"/>
+    </RelativeLayout>
 
 </LinearLayout>
