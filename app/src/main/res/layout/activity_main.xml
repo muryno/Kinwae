@@ -26,7 +26,7 @@
             android:layout_toEndOf="@id/icn"
             android:layout_width="wrap_content"
             android:gravity="center"
-            android:layout_height="30dp"
+            android:layout_height="24dp"
             android:textColor="@color/colorAccent"
             android:text="back"/>
 
@@ -34,9 +34,18 @@
             android:layout_width="wrap_content"
             android:gravity="center"
             android:layout_alignParentEnd="true"
-
-            android:layout_height="30dp"
+            android:layout_height="24dp"
             android:text="Personal"/>
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/simpleTextView"
+        android:layout_width="wrap_content"
+        android:text="Open New Account"
+        android:layout_margin="16dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        android:fontFamily="@font/gotham"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
