@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/button"
+        android:layout_width="@dimen/checkview_size"
+        android:layout_height="@dimen/checkview_size"
+        android:layout_margin="@dimen/margin_to_prevent_animation_cut"
+        android:background="@android:color/transparent"
+        android:enabled="true"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/gray_color"
+        android:textSize="@dimen/default_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="" />
+
+
+    <View
+        android:id="@+id/background_view"
+        android:layout_width="@dimen/checkview_size"
+        android:layout_height="@dimen/checkview_size"
+        android:layout_margin="@dimen/margin_to_prevent_animation_cut"
+        android:background="@drawable/bg_stepper"
+        android:enabled="true"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/gray_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1" />
+
+
+    <View
+        android:id="@+id/check_view_background"
+        android:layout_width="@dimen/checkview_size"
+        android:layout_height="@dimen/checkview_size"
+        android:layout_margin="@dimen/margin_to_prevent_animation_cut"
+        android:background="@drawable/bg_stepper_gray"
+        android:enabled="true"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/gray_color"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1" />
+
+
+    <View
+        android:id="@+id/mark_view_background"
+        android:layout_width="@dimen/checkview_size"
+        android:layout_height="@dimen/checkview_size"
+        android:layout_margin="@dimen/margin_to_prevent_animation_cut"
+        android:background="@drawable/bg_stepper_green"
+        android:enabled="true"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/gray_color"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1" />
+
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xxsmall_spacing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mark_view_background" />
+
+    <TextView
+        android:id="@+id/label_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_spacing"
+        android:layout_marginTop="@dimen/xsmall_spacing"
+        android:layout_marginEnd="@dimen/small_spacing"
+        android:gravity="center"
+        android:lineSpacingExtra="0sp"
+        android:textColor="@color/gray_color"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        tools:text="Ofertas e Campanhas" />
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_to_prevent_animation_cut"
+        android:background="@android:color/transparent"
+        android:enabled="true"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/gray_color"
+        android:textSize="@dimen/default_text_size"
+        app:layout_constraintEnd_toEndOf="@id/button"
+        app:layout_constraintStart_toStartOf="@id/button"
+        app:layout_constraintTop_toTopOf="@id/button"
+        app:layout_constraintBottom_toBottomOf="@id/button"
+        android:elevation="10dp"
+        tools:text="1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

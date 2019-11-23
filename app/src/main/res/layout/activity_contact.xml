@@ -68,12 +68,12 @@
                        android:layout_gravity="center"
                        android:text="+234" />
 
-                   <view
-                       android:layout_width="1dp"
-                       android:layout_height="20dp"
+                   <View
+                       android:layout_width="2dp"
+                       android:layout_height="wrap_content"
                        android:layout_gravity="center"
-                       android:background="@color/gray_color"
-                       android:layout_margin="8dp"/>
+                       android:layout_margin="10dp"
+                       android:background="@color/gray_color" />
 
                </LinearLayout>
 

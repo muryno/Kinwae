@@ -6,10 +6,4 @@
     <string name="city">City</string>
     <string name="address">Address</string>
 
-
-    <string-array name="stepview_titles">
-        <item>Personal</item>
-        <item>Contact</item>
-        <item>Upload</item>
-    </string-array>
 </resources>

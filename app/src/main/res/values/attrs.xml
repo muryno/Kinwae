@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CheckView">
+        <attr name="cv_text" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="StepperView">
+        <attr name="quantity" format="integer" />
+        <attr name="titles"/>
+    </declare-styleable>
+
+
+<!--    <declare-styleable name="StepperView">-->
+<!--        <attr name="exampleString" format="string" />-->
+<!--        <attr name="exampleDimension" format="dimension" />-->
+<!--        <attr name="exampleColor" format="color" />-->
+<!--        <attr name="exampleDrawable" format="color|reference" />-->
+<!--    </declare-styleable>-->
+</resources>

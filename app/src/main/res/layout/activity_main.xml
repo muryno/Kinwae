@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,43 +10,87 @@
 <View
     android:layout_width="match_parent"
     android:layout_height="3dp"
-    android:background="#FFA500"/>
+
+    android:background="@color/orange"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:background="#f6f6f6"
+        app:theme="@style/AppTheme.AppBarOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/icn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_left"
+                />
+            <TextView
+                android:layout_toEndOf="@id/icn"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="24dp"
+                android:textColor="@color/black"
+                android:text="back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_alignParentEnd="true"
+                android:layout_height="24dp"
+                android:text="Personal"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/simpleTextView"
+                android:layout_width="wrap_content"
+                android:text="Open New Account"
+
+                android:layout_margin="25dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:fontFamily="@font/gotham"
+                android:layout_height="wrap_content"/>
+            <com.example.kinwae.utils.StepperView
+                android:id="@+id/stepper"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:quantity="3"
+                android:layout_gravity="center"
+                app:titles="@array/test_array"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
 
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_margin="16dp"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/icn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_left"
-        />
-        <TextView
-            android:layout_toEndOf="@id/icn"
-            android:layout_width="wrap_content"
-            android:gravity="center"
-            android:layout_height="24dp"
-            android:textColor="@color/colorAccent"
-            android:text="back"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:gravity="center"
-            android:layout_alignParentEnd="true"
-            android:layout_height="24dp"
-            android:text="Personal"/>
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/activity_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/simpleTextView"
-        android:layout_width="wrap_content"
-        android:text="Open New Account"
-        android:layout_margin="16dp"
-        android:textColor="@color/colorAccent"
-        android:textSize="17sp"
-        android:fontFamily="@font/gotham"
-        android:layout_height="wrap_content"/>
 
-</LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
