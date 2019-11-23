@@ -58,7 +58,7 @@
                        android:layout_height="23dp"
                        android:layout_marginStart="10dp"
                        android:layout_gravity="center"
-                       android:src="@drawable/phone" />
+                       app:srcCompat="@drawable/phone" />
 
                    <TextView
                        android:layout_width="wrap_content"
@@ -173,13 +173,20 @@
                android:hint="Type in branch name"
                android:drawableEnd="@drawable/map_icon"
                />
-
+           <ImageButton
+               android:id="@+id/btn"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_marginTop="15dp"
+               android:layout_gravity="end"
+               android:background="@drawable/circle_shadow"
+               app:srcCompat="@drawable/comment"
+            />
 
            <Button
                android:id="@+id/generate_otp"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:layout_gravity="bottom"
 
                android:layout_marginTop="20dp"
                android:background="@drawable/buttonshape"
@@ -188,6 +195,7 @@
                android:textAllCaps="false"
                android:textColor="#ffffff"
                android:textSize="13sp" />
+
 
        </LinearLayout>
    </androidx.core.widget.NestedScrollView>
