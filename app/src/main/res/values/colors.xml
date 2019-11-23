@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#FF000000</color>
+
+    <color name="sv_background_color">#8B9FB0</color>
+    <color name="sv_step_color">#57a8e7</color>
+    <color name="gray_color">#cdcdcd</color>
+    <color name="gray_2">#d3d3d3</color>
+</resources>

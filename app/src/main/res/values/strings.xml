@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Kinwae</string>
+    <string name="email">Email</string>
+    <string name="email">Email</string>
+    <string name="state">State</string>
+    <string name="phone">Phone</string>
+    <string name="city">City</string>
+    <string name="address">Address</string>
+
+
+    <string-array name="stepview_titles">
+        <item>Personal</item>
+        <item>Contact</item>
+        <item>Upload</item>
+    </string-array>
+</resources>
